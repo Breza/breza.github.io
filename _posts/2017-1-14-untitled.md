@@ -28,6 +28,6 @@ Including Plots
 
 You can also embed plots, for example:
 
-![](untitled_files/figure-markdown_github/pressure-1.png)
+![_config.yml]({{ site.baseurl }}/images/pressure-1.png)
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
