@@ -6,10 +6,10 @@
 name: Andrew Breza
 
 # Short bio or description (displayed in the header)
-description: I'm the Director of Data Insights & Analytics at BulletinHealthcare. In my free time I enjoy using data to explore everything from policy to sports. Everything on this website is my own work.
+description: Welcome to my site!
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+avatar: https://avatars3.githubusercontent.com/u/7794186?v=3&s=460
 
 #
 # Flags below are optional
@@ -23,7 +23,7 @@ footer-links:
   flickr:
   github: Breza
   instagram:
-  linkedin:
+  linkedin: andrewbreza
   pinterest:
   rss: # just type anything here for a working RSS icon
   twitter: Breza
