@@ -13,7 +13,11 @@ Here's some text.
 
 And oh look, an image!
 
+<<<<<<< HEAD
 ```{r hist}
+=======
+```{r}
+>>>>>>> fcbd196324e765080b49e62a612b0234805bf231
 hist(rnorm(327000))
 ```
 
