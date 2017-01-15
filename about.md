@@ -4,12 +4,10 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+### Nice to meet you
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+I'm the Director of Data Insights & Analytics at BulletinHealthcare. This site showcases my personal projects and has nothing to do with my day job.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[andrew.breza@gmail.com](mailto:andrew.breza@gmail.com)
