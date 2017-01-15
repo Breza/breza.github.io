@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: Using (R) Markdown, Jekyll, and Github for Blogging
+title: A test of pushing content to a Github page through RStudio
 published: true
 tags: R R-Bloggers Jekyll github
 type: post
@@ -13,11 +13,7 @@ Here's some text.
 
 And oh look, an image!
 
-<<<<<<< HEAD
-```{r hist}
-=======
-```{r}
->>>>>>> fcbd196324e765080b49e62a612b0234805bf231
-hist(rnorm(327000))
+```{r hist, echo=FALSE}
+hist(rnorm(327000), col = "red", main = "")
 ```
 
