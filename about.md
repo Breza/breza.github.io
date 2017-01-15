@@ -6,7 +6,7 @@ permalink: /about/
 
 ### Nice to meet you
 
-I'm the Director of Data Insights & Analytics at BulletinHealthcare. This site showcases my personal projects and has nothing to do with my day job.
+I'm the Director of Data Insights & Analytics at BulletinHealthcare. I enjoy playing with data in my free time. I'm especially interested in how data can inform public policy.
 
 ### Contact me
 
