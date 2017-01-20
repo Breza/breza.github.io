@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: "2017-1-15-Baby-names"
+title: "2017-1-15-babynames"
 published: true
 tags: R
 type: post
@@ -63,7 +63,7 @@ head(dataset)
 
 
 {% highlight text %}
-## # A tibble: 6 ? 4
+## # A tibble: 6 × 4
 ##          X1    X2    X3  year
 ##       <chr> <chr> <int> <chr>
 ## 1      Mary     F  7065  1880
@@ -94,7 +94,7 @@ dataset %>%
 
 
 {% highlight text %}
-## # A tibble: 2 ? 2
+## # A tibble: 2 × 2
 ##   gender     count
 ##    <chr>     <int>
 ## 1      F 168861581
@@ -238,3 +238,4 @@ inner_join(dataset_old, dataset_new) %>%
  
  
 There you have it, the name Berlin has experienced the greatest male-female shift over the past several decades, while Gael has the distinction of having moved the most in the opposite direction.
+ 
