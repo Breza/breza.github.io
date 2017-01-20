@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: "2017-01-15-Baby-names"
+title: "2017-1-15-Baby-names"
 published: false
 tags: R
 type: post
