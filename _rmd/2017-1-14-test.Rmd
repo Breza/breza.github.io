@@ -7,10 +7,10 @@ type: post
 status: process
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+## Welcome to my new site
 
-print("TEST")
+This is the first post to my new site hosted by Github Pages. Github Pages lets me create content as Rmd files in Rstudio, process them using an R functin, and push the results to the Internet. Look for occassional posts about my side projects here.
+
+```{r}
+
 ```
-
-Just a test file
