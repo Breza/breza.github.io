@@ -3,13 +3,13 @@
 #
 
 # Name of your site (displayed in the header)
-name: Andrew Breza
+name: Your Name
 
 # Short bio or description (displayed in the header)
-description: Welcome to my site!
+description: Web Developer from Somewhere
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://avatars3.githubusercontent.com/u/7794186?v=3&s=460
+avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
 
 #
 # Flags below are optional
@@ -18,15 +18,15 @@ avatar: https://avatars3.githubusercontent.com/u/7794186?v=3&s=460
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: Andrew.Breza@gmail.com
-  facebook: Breza
+  email:
+  facebook:
   flickr:
-  github: Breza
-  instagram: andrewbreza
-  linkedin: andrewbreza
+  github: 
+  instagram:
+  linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: Breza
+  twitter: 
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
@@ -41,7 +41,7 @@ google_analytics:
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: http://breza.github.io
+url:
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
