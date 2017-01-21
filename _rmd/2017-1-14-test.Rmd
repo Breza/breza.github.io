@@ -10,7 +10,7 @@ status: process
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 
-TEST
+print("TEST")
 ```
 
 Just a test file
