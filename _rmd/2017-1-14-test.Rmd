@@ -1,0 +1,16 @@
+--- 
+layout: post
+title: Hello world!
+published: true
+tags: R
+type: post
+status: process
+---
+
+## Welcome to my new site
+
+This is the first post to my new site hosted by Github Pages. Github Pages lets me create content as Rmd files in Rstudio, process them into traditional markdown, and push the results to the Internet. Look for occassional posts about my side projects here.
+
+```{r}
+
+```
