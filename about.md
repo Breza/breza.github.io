@@ -10,5 +10,4 @@ I'm Andrew. I enjoy playing with data and my tool of choice is R. I'm especially
 
 ### Contact me
 
-I'm always happy to talk data.
-[andrew.breza@gmail.com](mailto:andrew.breza@gmail.com)
+Feel free to reach out to me via [LinkedIn](https://www.linkedin.com/in/andrewbreza/) or [email](mailto:andrew.breza@gmail.com).
