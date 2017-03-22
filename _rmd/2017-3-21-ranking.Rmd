@@ -25,6 +25,7 @@ x <-
 Now for the actual ranking. There's a lot of math involved, but the actual equation is easy to implement with some help from `dplyr`.
 
 ```{r}
+library(tidyverse)
 x %>%
   group_by(product) %>%
   summarise(ci_lower_bound = ((sum(rating == 1) + 1.9208) / (sum(rating == 1) + sum(rating == 0)) - 
