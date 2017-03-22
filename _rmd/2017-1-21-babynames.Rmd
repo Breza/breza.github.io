@@ -8,7 +8,6 @@ status: process
 ---
 
 
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 
@@ -154,7 +153,6 @@ inner_join(dataset_old, dataset_new) %>%
   rename(Name = name, `Per female old` = per_f_old, `Per female new` = per_f_new, `Change` = delta) %>%
   kable(digits = 2)
 ```
-
 
 There you have it, the name Berlin has experienced the greatest male-female shift over the past several decades, while Gael has the distinction of having moved the most in the opposite direction.
 
