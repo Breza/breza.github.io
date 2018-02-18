@@ -7,11 +7,11 @@ type: post
 status: process
 ---
 
-## How to implement ranking in R
+## How to implement Yelp-style ranking in R
 
-[Evan Miller](http://www.evanmiller.org/how-not-to-sort-by-average-rating.html) posted a how-to guide back in 2009 for ranking based on reviews. The problem he highlighted is the fact that percentage-based sorting doesn't really work well in places like Yelp and Amazon. For example, is a restaurant with 2 positive reviews and 0 negative reviews really better than a restaurant with 50 positive reviews and 1 negative review? Clearly not, and Miller outlines a better way. Miller has code examples in Ruby, SQL, and even Excel, but not R. Here's how to implement it in the best statistical programming language.
+Would you rather go to a restaurant that has 5 stars but only one review or a place with 4.9 stars on 1,000 reviews? Even though the first restaurant technically has a higher rating, the second restaurant is probably the better choice. [Evan Miller](http://www.evanmiller.org/how-not-to-sort-by-average-rating.html) posted a how-to guide back in 2009 this kind of ranking. Miller has code examples in Ruby, SQL, and even Excel, but not R. Here's how to implement it in the best statistical programming language.
 
-First we generate some dummy data. For this example, let's treat a rating of 0 as a bad review and a rating of 1 as a good review.
+First we generate some dummy data. For simplicity's sake, let's treat a rating of 0 as a bad review and a rating of 1 as a good review.
 
 ```{r, message=FALSE}
 
