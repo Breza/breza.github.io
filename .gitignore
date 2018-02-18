@@ -10,3 +10,4 @@ node_modules
 package.json
 .Rproj.user
 .Rhistory
+.RData
