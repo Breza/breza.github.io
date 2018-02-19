@@ -13,7 +13,8 @@ Would you rather go to a restaurant that has 5 stars but only one review or a pl
 
 First we generate some dummy data. For simplicity's sake, let's treat a rating of 0 as a bad review and a rating of 1 as a good review.
 
-```{r, message=FALSE}
+```{r, message=FALSE, warning=FALSE}
+suppressPackageStartupMessages(library(tidyverse))
 
 x <-
   tibble::tibble(
@@ -22,15 +23,18 @@ x <-
   )
 ```
 
-Now for the actual ranking. There's a lot of math involved, but the actual equation is easy to implement with some help from `dplyr`.
+### Warning: math ahead
 
-```{r, message=FALSE,echo=FALSE}
-library(tidyverse)
-x <- x %>%
+Now for the actual ranking. There's a lot of math involved, but the equation is fortunately quite easy to implement with some help from the [tidyverse](https://www.tidyverse.org). Check out Evan's original article for details on the algorithm.
+
+```{r, message=FALSE,echo=TRUE}
+
+accurate_rankings <- x %>%
   group_by(product) %>%
-  summarise(ci_lower_bound = ((sum(rating == 1) + 1.9208) / (sum(rating == 1) + sum(rating == 0)) - 
-                   1.96 * sqrt((sum(rating == 1) * sum(rating == 0)) / (sum(rating == 1) + sum(rating == 0)) + 0.9604) / 
-                          (sum(rating == 1) + sum(rating == 0))) / (1 + 3.8416 / (sum(rating == 1) + sum(rating == 0)))) %>%
+  summarise(ci_lower_bound = ((sum(rating == 1) + 1.9208) / (sum(rating == 1) + sum(rating == 0)) -
+  1.96 * sqrt((sum(rating == 1) * sum(rating == 0)) / (sum(rating == 1) + sum(rating == 0)) + 0.9604) /
+  (sum(rating == 1) + sum(rating == 0))
+  ) / (1 + 3.8416 / (sum(rating == 1) + sum(rating == 0)))) %>%
   arrange(desc(ci_lower_bound))
 ```
 
