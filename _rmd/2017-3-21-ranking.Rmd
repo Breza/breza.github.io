@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Ranking in R
-published: true
+published: false
 tags: R
 type: post
 status: process

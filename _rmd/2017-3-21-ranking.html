@@ -133,28 +133,17 @@ x &lt;-
   product = sample(LETTERS, size = 1000, replace = TRUE),
   rating = sample(c(0, 1), size = 1000, replace = TRUE)
   )</code></pre>
-<p>Now for the actual ranking. There’s a lot of math involved, but the equation is fortunately quite easy to implement with some help from the <a href="https://www.tidyverse.org">tidyverse</a>.</p>
-<pre class="r"><code>x %&gt;%
+<div id="warning-math-ahead" class="section level3">
+<h3>Warning: math ahead</h3>
+<p>Now for the actual ranking. There’s a lot of math involved, but the equation is fortunately quite easy to implement with some help from the <a href="https://www.tidyverse.org">tidyverse</a>. Check out Evan’s original article for details on the algorithm.</p>
+<pre class="r"><code>accurate_rankings &lt;- x %&gt;%
   group_by(product) %&gt;%
   summarise(ci_lower_bound = ((sum(rating == 1) + 1.9208) / (sum(rating == 1) + sum(rating == 0)) -
   1.96 * sqrt((sum(rating == 1) * sum(rating == 0)) / (sum(rating == 1) + sum(rating == 0)) + 0.9604) /
   (sum(rating == 1) + sum(rating == 0))
   ) / (1 + 3.8416 / (sum(rating == 1) + sum(rating == 0)))) %&gt;%
   arrange(desc(ci_lower_bound))</code></pre>
-<pre><code>## # A tibble: 26 x 2
-##    product ci_lower_bound
-##    &lt;chr&gt;            &lt;dbl&gt;
-##  1 J                0.570
-##  2 E                0.488
-##  3 T                0.484
-##  4 S                0.449
-##  5 W                0.422
-##  6 N                0.422
-##  7 R                0.422
-##  8 F                0.397
-##  9 Q                0.397
-## 10 V                0.381
-## # ... with 16 more rows</code></pre>
+</div>
 </div>
 
 
